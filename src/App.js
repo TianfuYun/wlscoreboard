@@ -44,18 +44,24 @@ class ScoreBoard extends Component {
 }
 
 const TableHeader = () => {
+  let header = [];
+  if (navigator.languages.includes('sv')) {
+    header = ['Start', 'Klass', 'Vikt', 'Namn', 'Klubb', 'Ryck', 'Stöt', 'Totalt', 'Plac.'];
+  } else {
+    header = ['Start', 'Class', 'Weight', 'Name', 'Team', 'Snatch', 'Clean & Jerk', 'Total', 'Rank'];
+  }
   return (
     <thead>
       <tr>
-        <th className='start'>Start</th>
-        <th className='start'>Klass</th>
-        <th className='bw'>Vikt</th>
-        <th className='name'>Namn</th>
-        <th className='club'>Klubb</th>
-        <th className='weight3' colSpan='3'>Ryck</th>
-        <th className='weight3' colSpan='3'>Stöt</th>
-        <th className='rank'>Totalt</th>
-        <th className='rank'>Plac.</th>
+        <th className='start'>{header[0]}</th>
+        <th className='start'>{header[1]}</th>
+        <th className='bw'>{header[2]}</th>
+        <th className='name'>{header[3]}</th>
+        <th className='club'>{header[4]}</th>
+        <th className='weight3' colSpan='3'>{header[5]}</th>
+        <th className='weight3' colSpan='3'>{header[6]}</th>
+        <th className='rank'>{header[7]}</th>
+        <th className='rank'>{header[8]}</th>
       </tr>
     </thead>
   );
