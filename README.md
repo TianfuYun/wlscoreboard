@@ -8,14 +8,9 @@ What if I run OWLCMS2 on a local network without internet access?
 In this case you need to have a computer with access to both the local network and the internet. There are several ways to achieve this. I recommend the following:
 
 1. Connect to the local network using a network cable.
-
 2. Connect to the internet using wifi or a mobile internet USB modem.
-
-3. We now need to change the IP settings for the local network (otherwise your computer will try to access internet through it).
-  
-  3.1 Hit the windows key + r, type cmd and hit enter. This will open a command window. Type ipconfig and hit enter. Note the IPv4 Address and the Subnet Mask for your Local Area Connection. These are usually similar to 192.168.0.11 and 255.255.255.0.
-  
-  3.2 Open the control panel and navigate to Network and Internet > Network and Sharing Center > Change adapter settings (might be slightly different depending on your version of Windows). Right click on Local Area Connection and click Properties. Double click Internet Protocol Version 4 (TCP/IPv4). This will open a new window. Check "Use the following IP address:" and fill in the IP address and Subnet mask from the previous step. Leave all other fields blank, this is important! You should now have access to both OWLCMS and the internet (try it).
+3. We now need to change the IP settings for the local network (otherwise your computer will try to access internet through it). Hit the windows key + r, type cmd and hit enter. This will open a command window. Type ipconfig and hit enter. Note the IPv4 Address and the Subnet Mask for your Local Area Connection. These are usually similar to 192.168.0.11 and 255.255.255.0.
+4. Open the control panel and navigate to Network and Internet > Network and Sharing Center > Change adapter settings (might be slightly different depending on your version of Windows). Right click on Local Area Connection and click Properties. Double click Internet Protocol Version 4 (TCP/IPv4). This will open a new window. Check "Use the following IP address:" and fill in the IP address and Subnet mask from the previous step. Leave all other fields blank, this is important! You should now have access to both OWLCMS and the internet (try it).
 
 
 How does it work?
